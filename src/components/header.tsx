@@ -1,16 +1,26 @@
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/esm/Nav';
 
-export default function header() {
+export default function Header(): JSX.Element {
   return (
-    <Navbar data-bs-theme="dark" sticky="top" className="header">
-      <Container>
-        <Navbar.Brand>Car Inventory Dashboard</Navbar.Brand>
+    <Navbar className="bg-body-tertiary">
+      <Container className="heading-container">
+        <Navbar.Brand href="#home">Car Inventory Dashboard</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav.Item>
+            <Nav.Link href="#favorites" className="white-text">Favorites</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#logout" className="white-text">Logout</Nav.Link>
+          </Nav.Item>
+          <Navbar.Text>
+            Signed in as: <a href="#login">Senait Abate</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Container>
-      <Nav.Item>
-        <Nav.Link href='/login'>Login</Nav.Link>
-      </Nav.Item>
     </Navbar>
-  );
+  )
 }
+
