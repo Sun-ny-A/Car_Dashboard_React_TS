@@ -9,7 +9,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 
-export default function Body(): JSX.Element {
+export default function content(): JSX.Element {
   const ratings = [
     {
       carName: 'honda',

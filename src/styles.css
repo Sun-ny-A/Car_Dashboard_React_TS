@@ -9,13 +9,14 @@
   background-color: lightslategray;
   width: 50%;
   float: right;
-  height: 1500px;
-  margin-top: 8dvh;
+  height: 1800px;
+  margin-top: 20px;
 }
 
 .info-row {
-  margin-top: 250px;
-  margin-bottom: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
 }
 
 .footer {
@@ -37,4 +38,26 @@
 
 .images {
   height: 350px;
+}
+
+.name-ratings {
+  width: 150px;
+  text-align: center;
+}
+
+.star-ratings {
+  width: 150px;
+  text-align: center;
+}
+
+.carousel {
+  width: 300px;
+  float: right;
+  padding-right: 100px;
+  margin: 10px;
+
+}
+
+.review-text {
+  color: black;
 }
