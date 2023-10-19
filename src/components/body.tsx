@@ -99,13 +99,13 @@ export default function Body(): JSX.Element {
               <Carousel.Item>
                 <div className="First slide" />
                 <Carousel.Caption >
-                  <h3>Absolutely love the car!</h3>
+                  <h3 className="review-text">Absolutely love the car!</h3>
                   <p className="review-text"> I have been driving it for about a month now, and absolutely love the car.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="Second slide" />
-                <Carousel.Caption>
+                <Carousel.Caption style={{ color: 'black' }}>
                   <h3>Very poor exterior paint quality</h3>
                   <p>Very poor quality control on the paint jobs. I have a black 2023 and the paint looks horrible with a dull look and lots of orange peel..</p>
                 </Carousel.Caption>
