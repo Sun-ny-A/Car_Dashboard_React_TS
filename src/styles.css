@@ -113,3 +113,38 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.signin-container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.label {
+  font: arial;
+  padding: 20px;
+  float: left;
+}
+
+.input-field{
+  float: right;
+  width: 100%;
+}
+
+.button {
+  background-color: #007BFF;
+  color: white;
+  border: 2px solid #0056b3;
+  padding: 15px;
+  margin-top: 60px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0fa8e9;
+}

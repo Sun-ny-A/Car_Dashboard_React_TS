@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ContentPage from './components/pages/ContentPage';
 import NewArrivalsPage from './components/pages/NewArrivalsPage';
+import Signin from './components/Signin';
 
 
 function App(): JSX.Element {
@@ -14,7 +15,8 @@ function App(): JSX.Element {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<ContentPage />}/>
+          <Route path='/' element={<Signin/>}/>
+          <Route path='/content' element={<ContentPage />}/>
           <Route path='/arrivals' element={<NewArrivalsPage />}/>
           <Route path='*' element={<Navigate to='/' />}/>
         </Routes>
