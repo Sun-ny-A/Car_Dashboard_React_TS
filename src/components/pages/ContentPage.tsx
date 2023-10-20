@@ -1,5 +1,5 @@
-import Body from '../components/Body';
-import Content from '../components/Content';
+import Body from '../Body';
+import Content from '../Content';
 
 export default function ContentPage() {
     return (
