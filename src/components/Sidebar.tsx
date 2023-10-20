@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <Navbar sticky='top' className='sidebar'>
       <Nav.Item>
-        <Nav.Link className='sidebar-link' as={NavLink} to='/'>Search New Arrivals!</Nav.Link>
+        <Nav.Link className='sidebar-link' as={NavLink} to='/arrivals'>Search New Arrivals!</Nav.Link>
       </Nav.Item>
     </Navbar>
   )

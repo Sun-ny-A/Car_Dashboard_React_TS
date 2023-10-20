@@ -67,16 +67,49 @@
 .sidebar {
   align-self: flex-start;
   background-color: lightskyblue;
-  border-radius: 50%;
+  border-radius: 50px;
   margin-top: 10px;
-  border-width: 10px;
-  border-color: lightslategray;
+  border: 5px solid lightslategray;
 }
 
 .sidebar-link {
   width: 130px;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.3s
-  
+}
+
+.sidebar-link:hover {
+  width: 130px;
+  border-radius: 50px; 
+  background-color: lightseagreen; 
+ 
+}
+
+.arrivals-container {
+  display: flex;
+  width: 200%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('public/images/background-image.jpg');
+  background-size: cover;
+}
+
+.arrivals-heading {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.list{
+  color: white;
+  font-size: 15px;
+  list-style: none;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgb(16, 210, 16),rgb(9, 53, 19));
+  -webkit-background-clip: text;
+  color: transparent;
 }
