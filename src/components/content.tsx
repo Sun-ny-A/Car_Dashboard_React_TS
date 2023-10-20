@@ -9,7 +9,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 
-export default function content(): JSX.Element {
+export default function Content() {
   const ratings = [
     {
       carName: 'honda',
@@ -45,9 +45,13 @@ export default function content(): JSX.Element {
       <div className="body-container">
         <div className="car-container">
           <Image src="./images/honda.jpg" className="images" />
+          <br/><br/>
           <Image src="./images/chevySilverado.jpg" className="images" fluid />
-          <Image src="./images/tesla-model-y.jpg" className="images" fluid />
+          <br/><br/><br/>
+          <Image src="./images/tesla-model-y.jpg" className="images" fluid /><br/>
+          <br/><br/><br/>
           <Image src="./images/toyotaRav.jpg" className="images" fluid />
+          <br/><br/><br/>
           <Image src="./images/gmc.jpg" className="images" fluid />
         </div>
         <div className="content-container">
@@ -99,13 +103,13 @@ export default function content(): JSX.Element {
               <Carousel.Item>
                 <div className="First slide" />
                 <Carousel.Caption >
-                  <h3>Absolutely love the car!</h3>
+                  <h3 className="review-text">Absolutely love the car!</h3>
                   <p className="review-text"> I have been driving it for about a month now, and absolutely love the car.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="Second slide" />
-                <Carousel.Caption>
+                <Carousel.Caption style={{ color: 'black' }}>
                   <h3>Very poor exterior paint quality</h3>
                   <p>Very poor quality control on the paint jobs. I have a black 2023 and the paint looks horrible with a dull look and lots of orange peel..</p>
                 </Carousel.Caption>

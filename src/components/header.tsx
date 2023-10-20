@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 export default function Header(): JSX.Element {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar className="bg-body-tertiary">
       <Container className="heading-container">
         <Navbar.Brand href="#home">Car Inventory Dashboard</Navbar.Brand>
         <Navbar.Toggle />
