@@ -2,6 +2,7 @@
 .car-container {
   width: 50%;
   float: left;
+  
 
 }
 
@@ -61,4 +62,21 @@
 .review-text {
   color: black;
 
+}
+
+.sidebar {
+  align-self: flex-start;
+  background-color: lightskyblue;
+  border-radius: 50%;
+  margin-top: 10px;
+  border-width: 10px;
+  border-color: lightslategray;
+}
+
+.sidebar-link {
+  width: 130px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s
+  
 }

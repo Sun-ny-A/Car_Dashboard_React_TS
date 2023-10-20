@@ -1,28 +1,28 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
-import Heading from './components/Header';
-import Logged from './pages/LoggedIn';
-import data from '../data/apidata';
-import footer from './components/Footer';
-import apidata from '../data/apidata';
-
-import './styles.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ContentPage from './components/pages/ContentPage';
+import NewArrivalsPage from './components/pages/NewArrivalsPage';
 
 
-function App() {
+function App(): JSX.Element {
+  
   return (
     <Container>
       <BrowserRouter>
-        <Heading />
+        <Header />
         <Routes>
-          <Route path='/' element={<LandingPage />}/>
-          <Route path='*' element={<Navigate to='/Login' />}/>
-          <Route path='/apidata' element={<apidata />} />
+          <Route path='/' element={<ContentPage />}/>
+          <Route path='/arrivals' element={<NewArrivalsPage />}/>
+          <Route path='*' element={<Navigate to='/' />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Container>
-  );
+  )
 }
+  
 
 export default App;
